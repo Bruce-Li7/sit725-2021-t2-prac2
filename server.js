@@ -1,0 +1,9 @@
+var express = require("express");
+var app = express();
+
+var port = process.env.port || 3000;
+
+app.listen(port, ()=>{
+    console.log('Web server running at: http://localhost:3000');
+    console.log('Type Ctrl+C to shut down the web server');
+});
