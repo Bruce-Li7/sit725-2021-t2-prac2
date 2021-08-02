@@ -4,7 +4,7 @@ var app = express();
 users = [];
 
 app.use(express.static(__dirname+'/public'));
-app.use(express.jason());
+app.use(express.json());
 app.use(express.urlencoded({ extened: false }));
 
 app.get("/user",(req,res) => {
